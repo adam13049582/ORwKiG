@@ -6,5 +6,25 @@
 <center><img src="images/logoPW.jpg"</center>
 <br>
 <br>
-<button type="button" style="width:200px; height: 70px; font-size : 20px; float: right;margin-right: 100px;">Wyświetl autorów</button>
+<div>
+<button id="showAuthorsButton" type="button" onclick="showAuthors()" style="width:200px; height: 70px; font-size : 20px; float: right;margin-right: 100px;">Wyświetl autorów</button>
+<div>
+<br>
+<br>
+<div id="authors" style="visibility: hidden; float: right;">
+<h2>Marika Wróbel</h2>
+<h2>Adam Kierzkowski</h2>
+<h2>Łukasz Czarny</h2>
+<button id="hideAuthorsButton" type="button" onclick="hideAuthors()" style="width:200px; height: 70px; font-size : 20px; float: right;">Ukryj autorów</button>
+<div>
+<script>
+      function showAuthors() {
+		document.getElementById("authors").style.visibility = "visible";
+		document.getElementById("showAuthorsButton").style.visibility = "hidden";
+      };
+	   function hideAuthors() {
+		document.getElementById("authors").style.visibility = "hidden";
+		document.getElementById("showAuthorsButton").style.visibility = "visible";
+      }
+    </script>
 </html>
