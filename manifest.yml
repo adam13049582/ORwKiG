@@ -1,0 +1,7 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: project-AKI-Faas
+  name: project-AKI-Faas
+  memory: 64M
+  stack: cflinuxfs2
